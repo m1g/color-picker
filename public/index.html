@@ -7,7 +7,41 @@
     <link rel="stylesheet" href="/screen.css">
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <h1>HSL Color Picker</h1>
+    </header>
+    <section>
+      <div class="gradient-box" style="background-color: hsla(128, 100%, 50%, 1)">
+        <div class="box-image"></div>
+      </div>
+      <h3 class="colors">hsla (128, 100%, 50%, 1)</h3>
+      <div class="handles">
+        <ul>
+          <li>
+            <h3>Hue</h3>
+            <input type="range" min="0" max="360" name="hue" value="180">
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3>Saturation</h3>
+            <input type="range" min="0" max="100" name="sat" value="50">
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3>Lightness</h3>
+            <input type="range" min="0" max="100" name="light" value="50">
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3>Alpha</h3>
+            <input type="range" min="0" max="1" step="0.1" name="alpha" value="0.5">
+          </li>
+        </ul>
+      </div>
+    </section>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>

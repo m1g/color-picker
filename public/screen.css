@@ -1,8 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+
 html {
   text-size-adjust: 100%;
 }
 
 body {
+  background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/tweed.png');
+  color: white;
   margin: 0;
   font: 16px / 1 sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section ul {
+  padding: 0;
+}
+
+section input[type=range] {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Gravitas One', cursive;
+  font-size: 2.5em;
+  text-shadow: 2px 2px #000;
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+h3.colors {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: hsl(216, 8%, 15%);
+  box-shadow: 2px 2px 5px black inset;
+  border-radius: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.gradient-box {
+  width: 10em;
+  height: 10em;
+  border: 10px solid rgb(170, 170, 170);
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+}
+
+.box-image {
+  background-image: url('tile.png');
+  background-size: cover;
+  width: 10em;
+  height: 10em;
+  z-index: -1;
+  position: absolute;
+}
+
+.handles {
+  width: 50%;
 }
